@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>体験入学 - 萠愛調理師専門学校</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- トップへ戻るボタン -->
+    <button id="scrollToTopBtn" aria-label="ページトップに戻る">▲</button>
+
+    <!-- ライトボックス -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="閉じる">&times;</button>
+            <img id="lightbox-image" class="lightbox-image" src="" alt="">
+            <button class="lightbox-prev" aria-label="前の画像">❮</button>
+            <button class="lightbox-next" aria-label="次の画像">❯</button>
+        </div>
+    </div>
+
+    <!-- ヘッダー -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">🍽️ 萠愛調理師専門学校</a>
+                <button class="menu-toggle" aria-label="メニューを開く">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="about.html">学校について</a></li>
+                        <li><a href="courses-detail.html">学び</a></li>
+                        <li><a href="employment-detail.html">就職</a></li>
+                        <li><a href="dormitory-detail.html">寮</a></li>
+                        <li><a href="experience.html">体験入学</a></li>
+                        <li><a href="admission.html">募集要項</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ページタイトル with Hero Image -->
+    <section
+        style="background: linear-gradient(135deg, rgba(212, 165, 116, 0.8) 0%, rgba(200, 155, 110, 0.8) 100%), url('images/topphoto.jpg') center/cover; color: white; padding: 3rem 2rem; text-align: center; position: relative;">
+        <div class="container">
+            <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">体験入学</h1>
+            <p>実際の授業を体験して、萠愛を知ろう</p>
+        </div>
+    </section>
+
+    <!-- パンくずリスト -->
+    <section style="background: white; padding: 1rem 2rem; border-bottom: 1px solid #e0d5c7;">
+        <div class="container">
+            <a href="index.html" style="color: #d4a574; text-decoration: none;">ホーム</a> /
+            <span style="color: #666;">体験入学</span>
+        </div>
+    </section>
+
+    <!-- 体験入学について -->
+    <section style="background: white; padding: 5rem 2rem;">
+        <div class="container">
+            <h2 class="section-title">体験入学とは</h2>
+            <div
+                style="max-width: 900px; margin: 0 auto; text-align: center; line-height: 1.8; color: #666; margin-bottom: 3rem;">
+                <p style="margin-bottom: 1.5rem;">
+                    体験入学は、実際に学校の授業を受けて、学校の雰囲気を感じることができるプログラムです。
+                    在校生とも交流でき、学校生活についてのリアルな情報が得られます。
+                </p>
+                <p>
+                    初心者から経験者まで、どなたでも参加できます。料理が好きな方、調理師を目指す方、
+                    気軽に参加してください。何か不安なことがあれば、スタッフまでお気軽にお聞きください。
+                </p>
+            </div>
+
+            <div
+                style="background: linear-gradient(135deg, #f5f0e6 0%, #faf8f3 100%); padding: 2rem; border-radius: 15px; margin-bottom: 2rem;">
+                <h3 style="color: #8b6947; margin-bottom: 1.5rem;">体験内容</h3>
+                <ul style="color: #666; line-height: 2; max-width: 600px; margin: 0 auto;">
+                    <li>✓ 学校説明会（10分）</li>
+                    <li>✓ 施設見学ツアー（15分）</li>
+                    <li>✓ 実際の調理実習に参加（60分）</li>
+                    <li>✓ 試食・交流タイム（20分）</li>
+                    <li>✓ 質問・個別相談（自由）</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 開催日程 -->
+    <section style="background: linear-gradient(135deg, #f5f0e6 0%, #faf8f3 100%); padding: 5rem 2rem;">
+        <div class="container">
+            <h2 class="section-title">開催日程</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div
+                    style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tr style="background: linear-gradient(135deg, #d4a574 0%, #c89b6e 100%); color: white;">
+                            <td style="padding: 1rem; font-weight: 600; text-align: center; width: 30%;">開催日</td>
+                            <td style="padding: 1rem; font-weight: 600; text-align: center; width: 35%;">開始時間</td>
+                            <td style="padding: 1rem; font-weight: 600; text-align: center;">定員</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 1rem; text-align: center; color: #d4a574;">毎月第1土曜日</td>
+                            <td style="padding: 1rem; text-align: center; color: #666;">10:00 / 14:00</td>
+                            <td style="padding: 1rem; text-align: center; color: #666;">各20名</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #eee;">
+                            <td style="padding: 1rem; text-align: center; color: #d4a574;">毎月第2日曜日</td>
+                            <td style="padding: 1rem; text-align: center; color: #666;">10:00 / 14:00</td>
+                            <td style="padding: 1rem; text-align: center; color: #666;">各20名</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; text-align: center; color: #d4a574;">平日開催</td>
+                            <td style="padding: 1rem; text-align: center; color: #666;">相談可</td>
+                            <td style="padding: 1rem; text-align: center; color: #666;">応相談</td>
+                        </tr>
+                    </table>
+                </div>
+                <p style="text-align: center; color: #666; margin-top: 2rem; font-size: 0.9rem;">
+                    ※ 事前予約が必要です。下のフォームからお申し込みください。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- よくある質問 -->
+    <section style="background: white; padding: 5rem 2rem;">
+        <div class="container">
+            <h2 class="section-title">よくある質問</h2>
+            <div style="max-width: 800px; margin: 0 auto; display: grid; gap: 1.5rem;">
+                <div style="background: #f5f0e6; padding: 1.5rem; border-radius: 12px;">
+                    <h4 style="color: #8b6947; margin-bottom: 0.5rem;">Q. 料理の経験がなくても大丈夫ですか？</h4>
+                    <p style="color: #666; font-size: 0.9rem;">A. もちろんです！初心者向けのプログラムもご用意しています。スタッフが丁寧にサポートします。</p>
+                </div>
+                <div style="background: #f5f0e6; padding: 1.5rem; border-radius: 12px;">
+                    <h4 style="color: #8b6947; margin-bottom: 0.5rem;">Q. 何時に終わりますか？</h4>
+                    <p style="color: #666; font-size: 0.9rem;">A. 10:00開始の場合は11:30頃、14:00開始の場合は15:30頃の終了を予定しています。</p>
+                </div>
+                <div style="background: #f5f0e6; padding: 1.5rem; border-radius: 12px;">
+                    <h4 style="color: #8b6947; margin-bottom: 0.5rem;">Q. 保護者も同伴できますか？</h4>
+                    <p style="color: #666; font-size: 0.9rem;">A. はい。保護者様のご同伴も大歓迎です。施設見学やご相談も可能です。</p>
+                </div>
+                <div style="background: #f5f0e6; padding: 1.5rem; border-radius: 12px;">
+                    <h4 style="color: #8b6947; margin-bottom: 0.5rem;">Q. 複数回参加できますか？</h4>
+                    <p style="color: #666; font-size: 0.9rem;">A. もちろんです。何度でも参加できますので、ぜひ複数回の参加をお勧めします。</p>
+                </div>
+                <div style="background: #f5f0e6; padding: 1.5rem; border-radius: 12px;">
+                    <h4 style="color: #8b6947; margin-bottom: 0.5rem;">Q. 交通費はかかりますか？</h4>
+                    <p style="color: #666; font-size: 0.9rem;">A. 体験入学は無料です。交通費はご負担をお願いしております。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 申込フォーム -->
+    <section style="background: linear-gradient(135deg, #f5f0e6 0%, #faf8f3 100%); padding: 5rem 2rem;">
+        <div class="container">
+            <h2 class="section-title">申込フォーム</h2>
+            <form class="contact-form" onsubmit="handleSubmit(event)" style="max-width: 600px; margin: 0 auto;">
+                <div class="form-group">
+                    <label for="name">お名前 *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">メールアドレス *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">電話番号 *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="category">ご質問・ご希望 *</label>
+                    <select id="category" name="category" required>
+                        <option value="">選択してください</option>
+                        <option value="experience">体験入学の申込</option>
+                        <option value="info">学校情報の請求</option>
+                        <option value="question">その他質問</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">メッセージ</label>
+                    <textarea id="message" name="message" placeholder="ご質問やご希望などございましたら、こちらにお書きください。"></textarea>
+                </div>
+                <button type="submit" class="form-button">申込を送信</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>🍽️ 萠愛調理師専門学校</h4>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">美味しい料理で、幸せを作る</p>
+            </div>
+            <div class="footer-section">
+                <h4>学校について</h4>
+                <ul>
+                    <li><a href="about.html">学校概要</a></li>
+                    <li><a href="courses-detail.html">学び</a></li>
+                    <li><a href="employment-detail.html">就職</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>入学案内</h4>
+                <ul>
+                    <li><a href="dormitory-detail.html">学生生活</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="experience.html">体験入学申込</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 萠愛調理師専門学校. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

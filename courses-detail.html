@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学び（詳細） - 萠愛調理師専門学校</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- トップへ戻るボタン -->
+    <button id="scrollToTopBtn" aria-label="ページトップに戻る">▲</button>
+
+    <!-- ライトボックス -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="閉じる">&times;</button>
+            <img id="lightbox-image" class="lightbox-image" src="" alt="">
+            <button class="lightbox-prev" aria-label="前の画像">❮</button>
+            <button class="lightbox-next" aria-label="次の画像">❯</button>
+        </div>
+    </div>
+
+    <!-- ヘッダー -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">🍽️ 萠愛調理師専門学校</a>
+                <button class="menu-toggle" aria-label="メニューを開く">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="about.html">学校について</a></li>
+                        <li><a href="courses-detail.html">学び</a></li>
+                        <li><a href="employment-detail.html">就職</a></li>
+                        <li><a href="dormitory-detail.html">寮</a></li>
+                        <li><a href="experience.html">体験入学</a></li>
+                        <li><a href="admission.html">募集要項</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ページタイトル with Hero Image -->
+    <section
+        style="background: linear-gradient(135deg, rgba(212, 165, 116, 0.8) 0%, rgba(200, 155, 110, 0.8) 100%), url('images/topphoto.jpg') center/cover; color: white; padding: 3rem 2rem; text-align: center; position: relative;">
+        <div class="container">
+            <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">学べる料理</h1>
+            <p>3つの専攻で、プロの技術を習得</p>
+        </div>
+    </section>
+
+    <!-- パンくずリスト -->
+    <section style="background: white; padding: 1rem 2rem; border-bottom: 1px solid #e0d5c7;">
+        <div class="container">
+            <a href="index.html" style="color: #d4a574; text-decoration: none;">ホーム</a> /
+            <span style="color: #666;">学び</span>
+        </div>
+    </section>
+
+    <!-- カリキュラム概要 -->
+    <section style="background: white; padding: 5rem 2rem;">
+        <div class="container">
+            <h2 class="section-title">カリキュラム</h2>
+            <div style="max-width: 900px; margin: 0 auto;">
+                <p style="color: #666; margin-bottom: 2rem; text-align: center; line-height: 1.8;">
+                    実践的な調理技術を習得するため、座学と実習をバランスよく配置しています。
+                    初心者から経験者まで、一人ひとりのレベルに合わせた指導を心がけています。
+                </p>
+
+                <div
+                    style="background: linear-gradient(135deg, #f5f0e6 0%, #faf8f3 100%); padding: 2rem; border-radius: 15px;">
+                    <h3 style="color: #8b6947; margin-bottom: 1.5rem;">2年制 調理師科</h3>
+                    <ul style="color: #666; line-height: 2;">
+                        <li>✓ 座学（栄養学、食品衛生、食文化）</li>
+                        <li>✓ 基礎実習（4月～6月）</li>
+                        <li>✓ 専攻実習（7月～12月）</li>
+                        <li>✓ 応用実習（1年目）</li>
+                        <li>✓ 校外実習（2年目）</li>
+                        <li>✓ 資格取得準備</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3つの専攻 -->
+    <section style="background: linear-gradient(135deg, #f5f0e6 0%, #faf8f3 100%); padding: 5rem 2rem;">
+        <div class="container">
+            <h2 class="section-title">3つの専攻</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+
+                <!-- 日本料理科 -->
+                <div
+                    style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                    <div
+                        style="height: 200px; background-image: url('images/cooking1.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div style="padding: 2rem;">
+                        <h3 style="color: #8b6947; margin-bottom: 1rem;">日本料理科</h3>
+                        <p style="color: #666; margin-bottom: 1rem;">
+                            和の美学と伝統技法を学びます。季節感を大切にした料理で、日本文化を表現するシェフを育成します。
+                        </p>
+                        <ul style="color: #666; font-size: 0.9rem; line-height: 1.8;">
+                            <li>• 出汁の基本と応用</li>
+                            <li>• 懐石料理技法</li>
+                            <li>• 寿司・刺身の技術</li>
+                            <li>• 季節料理の設計</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 西洋料理科 -->
+                <div
+                    style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                    <div
+                        style="height: 200px; background-image: url('images/cooking5.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div style="padding: 2rem;">
+                        <h3 style="color: #8b6947; margin-bottom: 1rem;">西洋料理科</h3>
+                        <p style="color: #666; margin-bottom: 1rem;">
+                            フランス料理の基本から応用までを学習。ホテル・レストランで活躍できるシェフを目指します。
+                        </p>
+                        <ul style="color: #666; font-size: 0.9rem; line-height: 1.8;">
+                            <li>• フランス料理の基本</li>
+                            <li>• ソース・アロマティックの技法</li>
+                            <li>• グルメ料理の設計</li>
+                            <li>• テーブルマナー</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 中国料理科 -->
+                <div
+                    style="background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s;">
+                    <div
+                        style="height: 200px; background-image: url('images/cooking9.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div style="padding: 2rem;">
+                        <h3 style="color: #8b6947; margin-bottom: 1rem;">中国料理科</h3>
+                        <p style="color: #666; margin-bottom: 1rem;">
+                            中国料理の歴史と技法を修得。火加減と調味が命の、本場の味を追求します。
+                        </p>
+                        <ul style="color: #666; font-size: 0.9rem; line-height: 1.8;">
+                            <li>• 火力調理の技法</li>
+                            <li>• 中華調味の基本</li>
+                            <li>• 北京料理・四川料理</li>
+                            <li>• 飾り切り・盛り付け</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 実習内容 -->
+    <section style="background: white; padding: 5rem 2rem;">
+        <div class="container">
+            <h2 class="section-title">実習内容</h2>
+            <div style="max-width: 900px; margin: 0 auto; display: grid; gap: 2rem;">
+                <div style="background: #f5f0e6; padding: 2rem; border-radius: 12px;">
+                    <h4 style="color: #8b6947; margin-bottom: 1rem; font-size: 1.1rem;">📅 1年目の流れ</h4>
+                    <p style="color: #666; line-height: 1.8;">
+                        <strong>4月～6月：基礎実習</strong> 包丁の持ち方、切る技術、火加減など、調理の基本をマスター。<br>
+                        <strong>7月～12月：専攻実習</strong> 選んだ専攻の本格的な技術を習得。<br>
+                        <strong>1月～3月：応用実習</strong> 実践的なメニュー開発と調理応用を学習。
+                    </p>
+                </div>
+                <div style="background: #f5f0e6; padding: 2rem; border-radius: 12px;">
+                    <h4 style="color: #8b6947; margin-bottom: 1rem; font-size: 1.1rem;">🏨 2年目の流れ</h4>
+                    <p style="color: #666; line-height: 1.8;">
+                        <strong>4月～7月：校外実習</strong> 提携ホテル・レストランで実務経験を積む。<br>
+                        <strong>8月～12月：高度な技術習得</strong> 一人前の調理師を目指して、応用技術を深める。<br>
+                        <strong>1月～3月：資格対策</strong> 調理師免許試験の合格を目指して、集中学習。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>🍽️ 萠愛調理師専門学校</h4>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">美味しい料理で、幸せを作る</p>
+            </div>
+            <div class="footer-section">
+                <h4>学校について</h4>
+                <ul>
+                    <li><a href="about.html">学校概要</a></li>
+                    <li><a href="courses-detail.html">学び</a></li>
+                    <li><a href="employment-detail.html">就職</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>入学案内</h4>
+                <ul>
+                    <li><a href="dormitory-detail.html">学生生活</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="experience.html">体験入学申込</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 萠愛調理師専門学校. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

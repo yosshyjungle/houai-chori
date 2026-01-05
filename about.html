@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学校について - 萠愛調理師専門学校</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- トップへ戻るボタン -->
+    <button id="scrollToTopBtn" aria-label="ページトップに戻る">▲</button>
+
+    <!-- ライトボックス -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="閉じる">&times;</button>
+            <img id="lightbox-image" class="lightbox-image" src="" alt="">
+            <button class="lightbox-prev" aria-label="前の画像">❮</button>
+            <button class="lightbox-next" aria-label="次の画像">❯</button>
+        </div>
+    </div>
+
+    <!-- ヘッダー -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">🍽️ 萠愛調理師専門学校</a>
+                <button class="menu-toggle" aria-label="メニューを開く">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="about.html">学校について</a></li>
+                        <li><a href="courses-detail.html">学び</a></li>
+                        <li><a href="employment-detail.html">就職</a></li>
+                        <li><a href="dormitory-detail.html">寮</a></li>
+                        <li><a href="experience.html">体験入学</a></li>
+                        <li><a href="admission.html">募集要項</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ページタイトル with Hero Image -->
+    <section
+        style="background: linear-gradient(135deg, rgba(212, 165, 116, 0.8) 0%, rgba(200, 155, 110, 0.8) 100%), url('images/topphoto.jpg') center/cover; color: white; padding: 3rem 2rem; text-align: center; position: relative;">
+        <div class="container">
+            <h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;">学校について</h1>
+            <p>萠愛調理師専門学校の理念と特徴</p>
+        </div>
+    </section>
+
+    <!-- パンくずリスト -->
+    <section style="background: white; padding: 1rem 2rem; border-bottom: 1px solid #e0d5c7;">
+        <div class="container">
+            <a href="index.html" style="color: #d4a574; text-decoration: none;">ホーム</a> /
+            <span style="color: #666;">学校について</span>
+        </div>
+    </section>
+
+    <!-- 学校概要 -->
+    <section style="background: white; padding: 5rem 2rem;">
+        <div class="container">
+            <h2 class="section-title">学校概要</h2>
+            <div style="max-width: 900px; margin: 0 auto; line-height: 1.8;">
+                <p style="margin-bottom: 1.5rem; color: #666;">
+                    萠愛調理師専門学校は、少人数制による丁寧な指導と、充実した実習環境を備えた調理師育成機関です。
+                    開校以来、多くの調理師を輩出し、各地のホテルやレストラン、和食店での活躍を支援してきました。
+                </p>
+                <p style="margin-bottom: 1.5rem; color: #666;">
+                    私たちの教育方針は、「美味しい料理で、幸せを作る」というシンプルながら深い理念に基づいています。
+                    技術だけでなく、食べる人の喜びを第一に考える人間教育を大切にしています。
+                </p>
+
+                <div style="background: #f5f0e6; padding: 2rem; border-radius: 15px; margin: 2rem 0;">
+                    <h3 style="color: #8b6947; margin-bottom: 1.5rem; font-size: 1.3rem;">基本情報</h3>
+                    <table style="width: 100%; border-collapse: collapse; color: #666;">
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 0.8rem; font-weight: 600; color: #8b6947; width: 25%;">校名</td>
+                            <td style="padding: 0.8rem;">萠愛調理師専門学校</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 0.8rem; font-weight: 600; color: #8b6947;">設立年</td>
+                            <td style="padding: 0.8rem;">2005年4月</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 0.8rem; font-weight: 600; color: #8b6947;">課程</td>
+                            <td style="padding: 0.8rem;">調理師科（2年制）、調理師実践科（1年制）</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid #ddd;">
+                            <td style="padding: 0.8rem; font-weight: 600; color: #8b6947;">定員</td>
+                            <td style="padding: 0.8rem;">60名/学年</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 0.8rem; font-weight: 600; color: #8b6947;">認可</td>
+                            <td style="padding: 0.8rem;">厚生労働大臣認可 調理師養成施設</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 理念・教育方針 -->
+    <section style="background: linear-gradient(135deg, #f5f0e6 0%, #faf8f3 100%); padding: 5rem 2rem;">
+        <div class="container">
+            <h2 class="section-title">理念・教育方針</h2>
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+                <div
+                    style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <h3 style="color: #8b6947; margin-bottom: 1rem; font-size: 1.3rem;">🎯 建学の精神</h3>
+                    <p style="color: #666; line-height: 1.8;">
+                        「美味しい料理で、幸せを作る」という理念のもと、技術と心を兼ね備えた調理師の育成を目指します。
+                    </p>
+                </div>
+                <div
+                    style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <h3 style="color: #8b6947; margin-bottom: 1rem; font-size: 1.3rem;">📚 教育方針</h3>
+                    <p style="color: #666; line-height: 1.8;">
+                        実践的な調理技術と、食文化に関する幅広い知識を習得させ、プロフェッショナルな調理師を輩出することを目指します。
+                    </p>
+                </div>
+                <div
+                    style="background: white; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                    <h3 style="color: #8b6947; margin-bottom: 1rem; font-size: 1.3rem;">🌟 目指す人材像</h3>
+                    <p style="color: #666; line-height: 1.8;">
+                        - 調理技術に優れている
+                        - 食べる人を思いやる心がある
+                        - チームワークを大切にできる
+                        - 常に向上心を持つ
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 施設紹介 -->
+    <section style="background: white; padding: 5rem 2rem;">
+        <div class="container">
+            <h2 class="section-title">施設紹介</h2>
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+                <div
+                    style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <div
+                        style="height: 200px; background-image: url('images/cooking2.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <h4 style="color: #8b6947; margin-bottom: 0.8rem;">実習室</h4>
+                        <p style="color: #666; font-size: 0.9rem;">
+                            最新の調理機器を備えた6つの実習室。少人数制で丁寧な指導が可能です。
+                        </p>
+                    </div>
+                </div>
+                <div
+                    style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <div
+                        style="height: 200px; background-image: url('images/cooking7.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <h4 style="color: #8b6947; margin-bottom: 0.8rem;">教室</h4>
+                        <p style="color: #666; font-size: 0.9rem;">
+                            栄養学、食文化、マナーなど、座学用の明るい教室を完備。
+                        </p>
+                    </div>
+                </div>
+                <div
+                    style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                    <div
+                        style="height: 200px; background-image: url('images/cooking8.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div style="padding: 1.5rem;">
+                        <h4 style="color: #8b6947; margin-bottom: 0.8rem;">図書室</h4>
+                        <p style="color: #666; font-size: 0.9rem;">
+                            1000冊以上の料理本や専門書を備え、自主学習をサポート。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>🍽️ 萠愛調理師専門学校</h4>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">美味しい料理で、幸せを作る</p>
+            </div>
+            <div class="footer-section">
+                <h4>学校について</h4>
+                <ul>
+                    <li><a href="about.html">学校概要</a></li>
+                    <li><a href="courses-detail.html">学び</a></li>
+                    <li><a href="employment-detail.html">就職</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>入学案内</h4>
+                <ul>
+                    <li><a href="dormitory-detail.html">学生生活</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                    <li><a href="experience.html">体験入学申込</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 萠愛調理師専門学校. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

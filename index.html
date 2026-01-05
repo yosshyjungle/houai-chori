@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>萠愛調理師専門学校</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- トップへ戻るボタン -->
+    <button id="scrollToTopBtn" aria-label="ページトップに戻る">▲</button>
+
+    <!-- ライトボックス -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="閉じる">&times;</button>
+            <img id="lightbox-image" class="lightbox-image" src="" alt="">
+            <button class="lightbox-prev" aria-label="前の画像">❮</button>
+            <button class="lightbox-next" aria-label="次の画像">❯</button>
+        </div>
+    </div>
+
+    <!-- ヘッダー -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">🍽️ 萠愛調理師専門学校</a>
+                <button class="menu-toggle" aria-label="メニューを開く">☰</button>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="about.html">学校について</a></li>
+                        <li><a href="courses-detail.html">学び</a></li>
+                        <li><a href="employment-detail.html">就職</a></li>
+                        <li><a href="dormitory-detail.html">寮</a></li>
+                        <li><a href="experience.html">体験入学</a></li>
+                        <li><a href="admission.html">募集要項</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ヒーロー -->
+    <section class="hero">
+        <div class="container">
+            <h1>美味しい料理で、幸せを作る</h1>
+            <p>少人数制で実践的な調理技術を学び、プロの料理人になろう</p>
+            <a href="experience.html" class="cta-button">体験入学を申し込む</a>
+        </div>
+    </section>
+
+    <!-- 特色 -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">萠愛の特色</h2>
+            <div class="features-grid">
+                <div class="feature-card"
+                    style="background-image: linear-gradient(135deg, rgba(255, 245, 240, 0.75) 0%, rgba(250, 248, 243, 0.75) 100%), url('images/cooking1.jpg'); background-size: cover; background-position: center;">
+                    <h3>少人数制</h3>
+                    <p>1クラス20名以下の少人数制で、講師が一人ひとりの成長をサポート。充実した指導が実現します。</p>
+                </div>
+                <div class="feature-card"
+                    style="background-image: linear-gradient(135deg, rgba(255, 245, 240, 0.75) 0%, rgba(250, 248, 243, 0.75) 100%), url('images/cooking2.jpg'); background-size: cover; background-position: center;">
+                    <h3>実習重視</h3>
+                    <p>週4日以上の実践的な調理実習。プロの技術を身につけ、即戦力として働ける人材に。</p>
+                </div>
+                <div class="feature-card"
+                    style="background-image: linear-gradient(135deg, rgba(255, 245, 240, 0.75) 0%, rgba(250, 248, 243, 0.75) 100%), url('images/cooking3.jpg'); background-size: cover; background-position: center;">
+                    <h3>学生寮完備</h3>
+                    <p>遠方からの入学者も安心。温かい環境の寮で、同志との絆を深めましょう。</p>
+                </div>
+                <div class="feature-card"
+                    style="background-image: linear-gradient(135deg, rgba(255, 245, 240, 0.75) 0%, rgba(250, 248, 243, 0.75) 100%), url('images/cooking4.jpg'); background-size: cover; background-position: center;">
+                    <h3>就職実績</h3>
+                    <p>95%以上の就職率。有名ホテルや飲食店への就職が決まっています。</p>
+                </div>
+                <div class="feature-card"
+                    style="background-image: linear-gradient(135deg, rgba(255, 245, 240, 0.75) 0%, rgba(250, 248, 243, 0.75) 100%), url('images/cooking5.jpg'); background-size: cover; background-position: center;">
+                    <h3>資格取得</h3>
+                    <p>調理師免許をはじめ、複数の資格取得をサポート。キャリア形成に必要な資格を習得。</p>
+                </div>
+                <div class="feature-card"
+                    style="background-image: linear-gradient(135deg, rgba(255, 245, 240, 0.75) 0%, rgba(250, 248, 243, 0.75) 100%), url('images/cooking6.jpg'); background-size: cover; background-position: center;">
+                    <h3>実績のある講師</h3>
+                    <p>業界での豊富な経験を持つ講師陣。プロから直接学べることが大きな強みです。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学び -->
+    <section class="courses" id="courses">
+        <div class="container">
+            <h2 class="section-title">学べる料理</h2>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image" style="background-image: url('images/cooking1.jpg');"></div>
+                    <div class="course-content">
+                        <h3>日本料理科</h3>
+                        <p>和の美学と伝統技法を学びます。季節感を大切にした料理で、日本の文化を表現するシェフを育成します。</p>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image" style="background-image: url('images/cooking5.jpg');"></div>
+                    <div class="course-content">
+                        <h3>西洋料理科</h3>
+                        <p>フランス料理の基本から応用までを学習。ホテル・レストランで活躍できるシェフを目指します。</p>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image" style="background-image: url('images/cooking9.jpg');"></div>
+                    <div class="course-content">
+                        <h3>中国料理科</h3>
+                        <p>中国料理の歴史と技法を修得。火加減と調味が命の、本場の味を追求します。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 就職 -->
+    <section class="employment" id="employment">
+        <div class="container">
+            <h2 class="section-title">就職・進路</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">就職率</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">就職先企業</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">92%</div>
+                    <div class="stat-label">満足度</div>
+                </div>
+            </div>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center; color: #666; line-height: 1.8;">
+                <p>卒業後は、ホテルやレストラン、和食店、給食施設など、様々な職場で活躍しています。</p>
+                <p>就職サポートチームが、あなたの夢の実現をしっかりサポートします。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学生生活 -->
+    <section class="dormitory" id="dormitory" style="background: linear-gradient(135deg, #f5f0e6 0%, #faf8f3 100%);">
+        <div class="container">
+            <h2 class="section-title">学生生活</h2>
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="studentLifeCarousel">
+                        <div class="carousel-slide">
+                            <div class="carousel-card">
+                                <div class="carousel-image" style="background-image: url('images/cooking1.jpg');"></div>
+                                <div class="carousel-content">
+                                    <h3>調理実習の様子</h3>
+                                    <p>少人数制で丁寧な指導を受けながら、実践的な調理技術を学びます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-card">
+                                <div class="carousel-image" style="background-image: url('images/cooking2.jpg');"></div>
+                                <div class="carousel-content">
+                                    <h3>実習室での実践</h3>
+                                    <p>最新の調理機器を備えた実習室で、プロの技術を身につけます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-card">
+                                <div class="carousel-image" style="background-image: url('images/cooking3.jpg');"></div>
+                                <div class="carousel-content">
+                                    <h3>学生寮での生活</h3>
+                                    <p>温かい学生寮で、全国から集まった仲間との絆を深めます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-card">
+                                <div class="carousel-image" style="background-image: url('images/cooking4.jpg');"></div>
+                                <div class="carousel-content">
+                                    <h3>実習風景</h3>
+                                    <p>週4日以上の実践的な調理実習で、即戦力として働ける人材を目指します。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-card">
+                                <div class="carousel-image" style="background-image: url('images/cooking5.jpg');"></div>
+                                <div class="carousel-content">
+                                    <h3>専門技術の習得</h3>
+                                    <p>プロの講師から直接学び、本格的な調理技術を習得します。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-card">
+                                <div class="carousel-image" style="background-image: url('images/cooking6.jpg');"></div>
+                                <div class="carousel-content">
+                                    <h3>充実した学生生活</h3>
+                                    <p>個室・相部屋から選択可能。栄養バランスの取れた食事と快適な環境で学びます。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-prev" aria-label="前のスライド">❮</button>
+                <button class="carousel-next" aria-label="次のスライド">❯</button>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+            <p style="text-align: center; margin-top: 2rem; color: #666; font-size: 1.1rem;">温かい学生寮で新しい家族に出会おう</p>
+        </div>
+    </section>
+
+    <!-- 調理実習ギャラリー -->
+    <section class="gallery" id="gallery" style="background: linear-gradient(135deg, #f5f0e6 0%, #faf8f3 100%);">
+        <div class="container">
+            <h2 class="section-title">調理実習の風景</h2>
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="cookingCarousel">
+                        <div class="carousel-slide">
+                            <div class="carousel-card">
+                                <div class="carousel-image" style="background-image: url('images/cooking2.jpg');"></div>
+                                <div class="carousel-content">
+                                    <h3>実習室での調理</h3>
+                                    <p>最新の調理機器を備えた実習室で、実践的な技術を学びます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-card">
+                                <div class="carousel-image" style="background-image: url('images/cooking3.jpg');"></div>
+                                <div class="carousel-content">
+                                    <h3>食材の準備</h3>
+                                    <p>新鮮な食材を丁寧に扱い、調理の基礎を学びます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-card">
+                                <div class="carousel-image" style="background-image: url('images/cooking4.jpg');"></div>
+                                <div class="carousel-content">
+                                    <h3>包丁技術の習得</h3>
+                                    <p>プロの講師から包丁の使い方を学び、基本技術を身につけます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-card">
+                                <div class="carousel-image" style="background-image: url('images/cooking6.jpg');"></div>
+                                <div class="carousel-content">
+                                    <h3>実践的な調理</h3>
+                                    <p>週4日以上の実習で、即戦力として働ける技術を習得します。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-card">
+                                <div class="carousel-image" style="background-image: url('images/cooking7.jpg');"></div>
+                                <div class="carousel-content">
+                                    <h3>調理の実践</h3>
+                                    <p>少人数制で丁寧な指導を受けながら、プロの技術を学びます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-card">
+                                <div class="carousel-image" style="background-image: url('images/cooking8.jpg');"></div>
+                                <div class="carousel-content">
+                                    <h3>専門技術の習得</h3>
+                                    <p>実践的なメニューを通じて、本格的な調理技術を身につけます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-card">
+                                <div class="carousel-image" style="background-image: url('images/cooking10.jpg');">
+                                </div>
+                                <div class="carousel-content">
+                                    <h3>実習風景</h3>
+                                    <p>充実した設備で、安全に実践的な調理技術を学びます。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="carousel-card">
+                                <div class="carousel-image" style="background-image: url('images/cooking11.jpg');">
+                                </div>
+                                <div class="carousel-content">
+                                    <h3>調理実習の様子</h3>
+                                    <p>仲間と協力しながら、プロの調理技術を習得していきます。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-prev" aria-label="前のスライド">❮</button>
+                <button class="carousel-next" aria-label="次のスライド">❯</button>
+                <div class="carousel-dots" id="cookingCarouselDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section style="background: white; padding: 5rem 2rem; text-align: center;">
+        <div class="container">
+            <h2 class="section-title">さあ、始めましょう</h2>
+            <p
+                style="color: #666; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; line-height: 1.8;">
+                萠愛調理師専門学校では、あなたの「調理師になりたい」という夢を全力でサポートします。<br>
+                まずは体験入学で、学校の雰囲気を感じてみてください！
+            </p>
+            <a href="experience.html" class="cta-button">体験入学に申し込む</a>
+        </div>
+    </section>
+
+    <!-- お問い合わせリンク -->
+    <section
+        style="background: linear-gradient(135deg, #d4a574 0%, #c89b6e 100%); color: white; padding: 3rem 2rem; text-align: center;">
+        <div class="container">
+            <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">ご質問・ご相談は</h3>
+            <a href="contact.html" class="cta-button" style="background: white; color: #d4a574;">お問い合わせページへ</a>
+        </div>
+    </section>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h4>🍽️ 萠愛調理師専門学校</h4>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.9;">美味しい料理で、幸せを作る</p>
+            </div>
+            <div class="footer-section">
+                <h4>学校について</h4>
+                <ul>
+                    <li><a href="#about">学校概要</a></li>
+                    <li><a href="#courses">学び</a></li>
+                    <li><a href="#employment">就職</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>入学案内</h4>
+                <ul>
+                    <li><a href="#dormitory">学生生活</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                    <li><a href="#contact">体験入学申込</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2025 萠愛調理師専門学校. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
