@@ -11,22 +11,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const lightboxClose = document.querySelector('.lightbox-close');
     const lightboxPrev = document.querySelector('.lightbox-prev');
     const lightboxNext = document.querySelector('.lightbox-next');
-    const galleryItems = document.querySelectorAll('.gallery-item img');
+    const galleryItems = document.querySelectorAll('.gallery-item img, .student-life-gallery img');
     
     let currentImageIndex = 0;
-    const images = Array.from(galleryItems).map(img => img.src);
+    const images = Array.from(galleryItems).map(img => ({ src: img.src, title: img.dataset.title, description: img.dataset.description }));
     
     // 画像をクリックしたときのイベントリスナー
     galleryItems.forEach((img, index) => {
         img.addEventListener('click', function() {
             currentImageIndex = index;
-            openLightbox(img.src);
+            openLightbox(index);
         });
     });
     
     // ライトボックスを開く
-    function openLightbox(imageSrc) {
-        lightboxImage.src = imageSrc;
+    function openLightbox(index) {
+        const image = images[index];
+        lightboxImage.src = image.src;
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden'; // スクロール禁止
     }
@@ -40,13 +41,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // 前の画像を表示
     function showPreviousImage() {
         currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
-        lightboxImage.src = images[currentImageIndex];
+        openLightbox(currentImageIndex);
     }
     
     // 次の画像を表示
     function showNextImage() {
         currentImageIndex = (currentImageIndex + 1) % images.length;
-        lightboxImage.src = images[currentImageIndex];
+        openLightbox(currentImageIndex);
     }
     
     // クローズボタン
@@ -213,202 +214,3 @@ async function handleSubmit(event) {
         submitButton.disabled = false;
     }
 }
-
-/**
- * カルーセル機能
- */
-document.addEventListener('DOMContentLoaded', function() {
-    const carousel = document.getElementById('studentLifeCarousel');
-    const prevButton = document.querySelector('.carousel-prev');
-    const nextButton = document.querySelector('.carousel-next');
-    const dotsContainer = document.getElementById('carouselDots');
-    
-    if (!carousel) return;
-    
-    const slides = carousel.querySelectorAll('.carousel-slide');
-    let currentIndex = 0;
-    
-    // ドットを生成
-    slides.forEach((_, index) => {
-        const dot = document.createElement('button');
-        dot.className = 'carousel-dot';
-        if (index === 0) dot.classList.add('active');
-        dot.setAttribute('aria-label', `スライド${index + 1}に移動`);
-        dot.addEventListener('click', () => goToSlide(index));
-        dotsContainer.appendChild(dot);
-    });
-    
-    const dots = dotsContainer.querySelectorAll('.carousel-dot');
-    
-    // スライドを表示する関数
-    function showSlide(index) {
-        if (index < 0) {
-            currentIndex = slides.length - 1;
-        } else if (index >= slides.length) {
-            currentIndex = 0;
-        } else {
-            currentIndex = index;
-        }
-        
-        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-        
-        // ドットの状態を更新
-        dots.forEach((dot, i) => {
-            if (i === currentIndex) {
-                dot.classList.add('active');
-            } else {
-                dot.classList.remove('active');
-            }
-        });
-    }
-    
-    // 指定したスライドに移動
-    function goToSlide(index) {
-        showSlide(index);
-    }
-    
-    // 前のスライド
-    function prevSlide() {
-        showSlide(currentIndex - 1);
-    }
-    
-    // 次のスライド
-    function nextSlide() {
-        showSlide(currentIndex + 1);
-    }
-    
-    // ボタンのイベントリスナー
-    if (prevButton) {
-        prevButton.addEventListener('click', prevSlide);
-    }
-    
-    if (nextButton) {
-        nextButton.addEventListener('click', nextSlide);
-    }
-    
-    // 自動スライド（オプション）
-    let autoSlideInterval;
-    
-    function startAutoSlide() {
-        autoSlideInterval = setInterval(() => {
-            nextSlide();
-        }, 5000); // 5秒ごとに自動スライド
-    }
-    
-    function stopAutoSlide() {
-        if (autoSlideInterval) {
-            clearInterval(autoSlideInterval);
-        }
-    }
-    
-    // マウスホバー時に自動スライドを停止
-    const carouselContainer = document.querySelector('.carousel-container');
-    if (carouselContainer) {
-        carouselContainer.addEventListener('mouseenter', stopAutoSlide);
-        carouselContainer.addEventListener('mouseleave', startAutoSlide);
-    }
-    
-    // 初期化
-    startAutoSlide();
-});
-
-/**
- * 調理実習の風景カルーセル機能
- */
-document.addEventListener('DOMContentLoaded', function() {
-    const gallerySection = document.getElementById('gallery');
-    if (!gallerySection) return;
-    
-    const carousel = document.getElementById('cookingCarousel');
-    const prevButton = gallerySection.querySelector('.carousel-prev');
-    const nextButton = gallerySection.querySelector('.carousel-next');
-    const dotsContainer = document.getElementById('cookingCarouselDots');
-    
-    if (!carousel) return;
-    
-    const slides = carousel.querySelectorAll('.carousel-slide');
-    let currentIndex = 0;
-    
-    // ドットを生成
-    slides.forEach((_, index) => {
-        const dot = document.createElement('button');
-        dot.className = 'carousel-dot';
-        if (index === 0) dot.classList.add('active');
-        dot.setAttribute('aria-label', `スライド${index + 1}に移動`);
-        dot.addEventListener('click', () => goToSlide(index));
-        dotsContainer.appendChild(dot);
-    });
-    
-    const dots = dotsContainer.querySelectorAll('.carousel-dot');
-    
-    // スライドを表示する関数
-    function showSlide(index) {
-        if (index < 0) {
-            currentIndex = slides.length - 1;
-        } else if (index >= slides.length) {
-            currentIndex = 0;
-        } else {
-            currentIndex = index;
-        }
-        
-        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
-        
-        // ドットの状態を更新
-        dots.forEach((dot, i) => {
-            if (i === currentIndex) {
-                dot.classList.add('active');
-            } else {
-                dot.classList.remove('active');
-            }
-        });
-    }
-    
-    // 指定したスライドに移動
-    function goToSlide(index) {
-        showSlide(index);
-    }
-    
-    // 前のスライド
-    function prevSlide() {
-        showSlide(currentIndex - 1);
-    }
-    
-    // 次のスライド
-    function nextSlide() {
-        showSlide(currentIndex + 1);
-    }
-    
-    // ボタンのイベントリスナー
-    if (prevButton) {
-        prevButton.addEventListener('click', prevSlide);
-    }
-    
-    if (nextButton) {
-        nextButton.addEventListener('click', nextSlide);
-    }
-    
-    // 自動スライド（オプション）
-    let autoSlideInterval;
-    
-    function startAutoSlide() {
-        autoSlideInterval = setInterval(() => {
-            nextSlide();
-        }, 5000); // 5秒ごとに自動スライド
-    }
-    
-    function stopAutoSlide() {
-        if (autoSlideInterval) {
-            clearInterval(autoSlideInterval);
-        }
-    }
-    
-    // マウスホバー時に自動スライドを停止
-    const carouselContainer = gallerySection.querySelector('.carousel-container');
-    if (carouselContainer) {
-        carouselContainer.addEventListener('mouseenter', stopAutoSlide);
-        carouselContainer.addEventListener('mouseleave', startAutoSlide);
-    }
-    
-    // 初期化
-    startAutoSlide();
-});
